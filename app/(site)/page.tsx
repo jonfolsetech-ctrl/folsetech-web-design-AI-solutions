@@ -154,15 +154,18 @@ export default function HomePage() {
             subtitle="City landing pages built for local SEO and fast conversions."
           />
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
-            <a href="/locations/baton-rouge" className="rounded-xl border border-line p-4 hover:bg-white/5 transition">
-              Baton Rouge Web Design
-            </a>
-            <a href="/locations/prairieville" className="rounded-xl border border-line p-4 hover:bg-white/5 transition">
-              Prairieville Web Design
-            </a>
-            <a href="/locations/denham-springs" className="rounded-xl border border-line p-4 hover:bg-white/5 transition">
-              Denham Springs Web Design
-            </a>
+            {[
+              "Baton Rouge",
+              "Prairieville",
+              "Denham Springs",
+              "Gonzales",
+              "Ascension Parish",
+              "River Parishes"
+            ].map((city) => (
+              <div key={city} className="rounded-xl border border-line p-4 text-sm text-ink/80">
+                {city} Web Design
+              </div>
+            ))}
           </div>
         </Container>
       </section>

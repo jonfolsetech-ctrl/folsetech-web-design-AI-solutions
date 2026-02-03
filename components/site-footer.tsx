@@ -45,21 +45,6 @@ export default function SiteFooter() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link className="hover:text-ink hover:underline" href="/locations/baton-rouge">
-                Baton Rouge
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-ink hover:underline" href="/locations/prairieville">
-                Prairieville
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-ink hover:underline" href="/locations/denham-springs">
-                Denham Springs
-              </Link>
-            </li>
           </ul>
         </div>
 
