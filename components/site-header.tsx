@@ -33,7 +33,7 @@ export default function SiteHeader() {
 
         <nav className="hidden md:flex items-center gap-1">
           {nav.map((item) => {
-            const active = item.href === "/" || item.href === "/#top" ? pathname === "/" : false;
+            const active = item.href === "/#top" && pathname === "/";
             return (
               <Link
                 key={item.href}
