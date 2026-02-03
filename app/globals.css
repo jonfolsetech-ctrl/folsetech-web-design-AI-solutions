@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body { height: 100%; }
+body { @apply bg-bg text-ink font-sans antialiased; }
+::selection { background: rgba(247,201,72,0.25); }
+
+.tech-bg {
+  background-image: radial-gradient(circle at 1px 1px, rgba(77,214,255,0.10) 1px, transparent 0),
+                    radial-gradient(circle at 18px 18px, rgba(247,201,72,0.06) 1px, transparent 0);
+  background-size: 36px 36px;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(77,214,255,0.65);
+  outline-offset: 3px;
+}
